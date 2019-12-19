@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <div class='container'>
+      <form method="post" action="{% url 'input' %}">
+        {%csrf_token%}
+        <input type="text" name="input">
+      </form>
+      <p>{{ t }}</p>
+      <p>{{ country }}</p>
+    </div>
+  </body>
+</html>
+
